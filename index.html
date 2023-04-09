@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- The timer is displayed using a div element with the class "timer" -->
+<div style="margin-top: 30px;">
+<div class="timer t1">
+  <div class="digit">H</div>
+  <div class="digit">H</div>
+  <div class="separator">:</div>
+  <div class="digit">M</div>
+  <div class="digit">M</div>
+  <div class="separator">:</div>
+  <div class="digit">S</div>
+  <div class="digit">S</div>
+  <div class="separator">:</div>
+  <div class="digit">MS</div>
+  <div class="digit">MS</div>
+</div>
+<div class="timer t2">
+    <div class="digit hours-tens">0</div>
+    <div class="digit hours-ones">0</div>
+    <div class="separator">:</div>
+    <div class="digit minutes-tens">0</div>
+    <div class="digit minutes-ones">0</div>
+    <div class="separator">:</div>
+    <div class="digit seconds-tens">0</div>
+    <div class="digit seconds-ones">0</div>
+    <div class="separator">:</div>
+    <div class="digit milliseconds-tens">0</div>
+    <div class="digit milliseconds-ones">0</div>
+  </div>
+  
+  <!-- The buttons are displayed using a div element with the class "buttons" -->
+  <div class="buttons">
+    <button id="startButton">Start</button>
+    <button id="pauseButton" disabled>Pause</button>
+    <button id="resetButton" disabled>Reset</button>
+    <button id="lapButton" disabled>Lap</button>
+  </div>
+    <!-- The lap times are displayed using a list element with the id "lapTimes" -->
+  <ul id="lapTimesList"></ul>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
